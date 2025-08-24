@@ -111,5 +111,19 @@ fashion-shop/
 ├── postcss.config.js
 └── next.config.js
 
+## Getting Started
+
+Follow these steps to set up and run the Fashion Shop application locally.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/fashion-shop.git
+cd fashion-shop
+
+### 2. Install Dependencies
+npm install
+
+
 
 
