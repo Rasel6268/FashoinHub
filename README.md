@@ -63,48 +63,53 @@ A full-featured fashion shop application built with **Next.js 15**, **NextAuth.j
 
 ## Project Structure
 fashion-shop/
+## Project Structure
+
+```plaintext
+fashion-shop/
 │
-├── app/                       # Next.js App Router main folder
-│   ├── api/                   # API routes
-│   │   ├── add_product/       # API for adding products
+├── app/
+│   ├── api/
+│   │   ├── add_product/
 │   │   │   └── route.jsx
-│   │   └── product_details/   # API for fetching single product
+│   │   └── product_details/
 │   │       └── [id]/route.jsx
 │   │
-│   ├── dashboard/             # Protected routes
+│   ├── dashboard/
 │   │   └── add-product/
-│   │       └── page.jsx       # Add Product page (protected)
+│   │       └── page.jsx
 │   │
 │   ├── login/
-│   │   └── page.jsx           # Login page with NextAuth
+│   │   └── page.jsx
 │   │
 │   ├── products/
-│   │   ├── [id]/page.jsx      # Product details page
-│   │   └── page.jsx           # Product list page
+│   │   ├── [id]/page.jsx
+│   │   └── page.jsx
 │   │
-│   ├── page.jsx               # Landing page (/)
-│   └── layout.jsx             # Global layout (Navbar + Footer)
+│   ├── page.jsx
+│   └── layout.jsx
 │
-├── components/                # Reusable UI components
+├── components/
 │   ├── Footer.jsx
 │   ├── Navbar.jsx
 │   ├── Hero.jsx
 │   ├── ProductCard.jsx
 │   └── ProductHighlights.jsx
 │
-├── lib/                       # Utility libraries
-│   └── mongodb.js             # MongoDB connection helper
+├── lib/
+│   └── mongodb.js
 │
 ├── styles/
-│   └── globals.css            # Global TailwindCSS styles
+│   └── globals.css
 │
-├── public/                     # Static assets (images, icons)
+├── public/
 │   └── images/
 │
-├── .env.local                 # Environment variables
+├── .env.local
 ├── package.json
 ├── tailwind.config.js
 ├── postcss.config.js
 └── next.config.js
+
 
 
