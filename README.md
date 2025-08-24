@@ -62,4 +62,49 @@ A full-featured fashion shop application built with **Next.js 15**, **NextAuth.j
 ---
 
 ## Project Structure
+fashion-shop/
+│
+├── app/                       # Next.js App Router main folder
+│   ├── api/                   # API routes
+│   │   ├── add_product/       # API for adding products
+│   │   │   └── route.jsx
+│   │   └── product_details/   # API for fetching single product
+│   │       └── [id]/route.jsx
+│   │
+│   ├── dashboard/             # Protected routes
+│   │   └── add-product/
+│   │       └── page.jsx       # Add Product page (protected)
+│   │
+│   ├── login/
+│   │   └── page.jsx           # Login page with NextAuth
+│   │
+│   ├── products/
+│   │   ├── [id]/page.jsx      # Product details page
+│   │   └── page.jsx           # Product list page
+│   │
+│   ├── page.jsx               # Landing page (/)
+│   └── layout.jsx             # Global layout (Navbar + Footer)
+│
+├── components/                # Reusable UI components
+│   ├── Footer.jsx
+│   ├── Navbar.jsx
+│   ├── Hero.jsx
+│   ├── ProductCard.jsx
+│   └── ProductHighlights.jsx
+│
+├── lib/                       # Utility libraries
+│   └── mongodb.js             # MongoDB connection helper
+│
+├── styles/
+│   └── globals.css            # Global TailwindCSS styles
+│
+├── public/                     # Static assets (images, icons)
+│   └── images/
+│
+├── .env.local                 # Environment variables
+├── package.json
+├── tailwind.config.js
+├── postcss.config.js
+└── next.config.js
+
 
