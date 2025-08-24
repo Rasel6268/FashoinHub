@@ -1,40 +1,65 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Fashion Shop Web Application
 
-## Getting Started
+A full-featured fashion shop application built with **Next.js 15**, **NextAuth.js**, and a backend API using Next.js Route Handlers. Users can browse products, view product details, login with social or credentials, and add products (protected route).
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Table of Contents
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. [Features](#features)  
+2. [Technologies Used](#technologies-used)  
+3. [Project Structure](#project-structure)  
+4. [Getting Started](#getting-started)  
+5. [Available Pages](#available-pages)  
+6. [Optional Enhancements](#optional-enhancements)  
+7. [Environment Variables](#environment-variables)  
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Features
 
-## Learn More
+- **Landing Page** (`/`) with:
+  - Navbar
+  - Hero Section
+  - Product Highlights
+  - Footer
+  - Navigation links to login and products
 
-To learn more about Next.js, take a look at the following resources:
+- **Login Page** (`/login`):
+  - Credential login (username/password)
+  - Social login (Google)
+  - Redirects to `/products` after successful login
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Product List Page** (`/products`):
+  - Publicly accessible
+  - Displays products fetched from a mock backend or database
+  - Each product includes name, description, price, and a "Details" button
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Product Details Page** (`/products/[id]`):
+  - Publicly accessible
+  - Shows full product details (images, description, sizes, price)
 
-## Deploy on Vercel
+- **Protected Add Product Page** (`/dashboard/add-product`):
+  - Only accessible when logged in
+  - Form to add a new product to the database
+  - Redirects unauthenticated users to `/login`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Optional Enhancements**:
+  - Loading spinner when submitting forms
+  - Toast notifications on successful product add
+  - Light/Dark theme toggle
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# FashoinHub
->>>>>>> 7b7a286f2bf6289c7c6878182130aedceeb24dbe
+---
+
+## Technologies Used
+
+- **Frontend**: Next.js 15, React, Tailwind CSS  
+- **Authentication**: NextAuth.js (Google + Credentials)  
+- **Backend**: Next.js API Route Handlers or simple Express.js server  
+- **Database**: MongoDB (or mock JSON file for product list)  
+- **UI Enhancements**: react-hot-toast, loading spinners  
+
+---
+
+## Project Structure
+
